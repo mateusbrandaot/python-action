@@ -16,8 +16,6 @@ jobs:
     - name: Install Poetry
       run: curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
     - name: Build 
-      run: poetry build
-    - name: poetry autenticacao 
-      run: twine upload dist/* --username pypi-AgEIcHlwaS5vcmcCJDFjYmJkYTM5LWUyNjEtNGFlYi05NzdiLWJmMmJlZWM1NmM0MQACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiBsUUaMU18FNeDuJ0QIO-uBYgyxEnyhdt6HPjDu9eitXg  
+      run: poetry build 
     - name: publish
-      run: poetry publish 
+      run: poetry publish --username mateusbrandaote --password pypi-AgEIcHlwaS5vcmcCJDFjYmJkYTM5LWUyNjEtNGFlYi05NzdiLWJmMmJlZWM1NmM0MQACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiBsUUaMU18FNeDuJ0QIO-uBYgyxEnyhdt6HPjDu9eitXg

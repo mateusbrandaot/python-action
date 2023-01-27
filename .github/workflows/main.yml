@@ -2,8 +2,8 @@ name: Publish to PyPI
 on:
 env:
   PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-  push:
-    branches:
+push:
+  branches:
       - main
 jobs:
   build:

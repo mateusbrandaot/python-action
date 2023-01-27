@@ -18,6 +18,6 @@ jobs:
     - name: Build 
       run: poetry build 
     - name: token
-      run: poetry config pypi-token.pypi pypi-AgEIcHlwaS5vcmcCJGZlNmVmZmViLTIyYWMtNDA5My05OTNhLTYwYjZkYTcwY2QxMAACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiAVg34_zAYwjwAMdHkSSzda7HrIj83skkGichaYk0P9XQ
+      run: poetry config pypi-token.pypi pypi-AgEIcHlwaS5vcmcCJGEzZmQ3NzMyLWQ0ZDYtNDY5My04ZTAzLTJiZTMxNDljNDRlOAACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiAuVTEgCMYWVllkAX-2J7V5Exo25LCY7GsB6Y8E0unm-w
     - name: Publish to PyPI
       run: poetry publish 

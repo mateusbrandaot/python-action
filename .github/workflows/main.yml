@@ -18,4 +18,4 @@ jobs:
     - name: Build 
       run: poetry build 
     - name: publish
-      run: poetry publish --username mateusbrandaote --password pypi-AgEIcHlwaS5vcmcCJDFjYmJkYTM5LWUyNjEtNGFlYi05NzdiLWJmMmJlZWM1NmM0MQACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiBsUUaMU18FNeDuJ0QIO-uBYgyxEnyhdt6HPjDu9eitXg
+      run: poetry publish --username mateusbrandaote --password e9855e9a-2373-41e8-9bef-b46cb4a1aa9b

@@ -4,10 +4,12 @@ on:
     branches:
       - main
 env:
-  PYPI_TOKEN: ${{ secrets.dev.PYPI_TOKEN }}      
+  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}      
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ENV: dev
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python

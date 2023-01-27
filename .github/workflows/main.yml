@@ -1,7 +1,6 @@
 name: Build and publish python package
 
 on: [push]
-
 jobs:
   publish-service-client-package:
     runs-on: ubuntu-latest
@@ -11,5 +10,7 @@ jobs:
       - name: Publish PyPi package
         uses: code-specialist/pypi-poetry-publish@v1
         with:
-          ACCESS_TOKEN: ${{ secrets.TOKEN_GIT }}
-          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.TOKEN_PYPI }}
+          PACKAGE_DIRECTORY: "./src/"
+          PYTHON_VERSION: "3.8"
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}

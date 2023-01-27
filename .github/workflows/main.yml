@@ -1,10 +1,10 @@
 name: Publish to PyPI
 on:
-env:
-  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
-push:
-  branches:
+  push:
+    branches:
       - main
+env:
+  PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
     - name: Build 
       run: poetry build 
     - name: Check PYPI_TOKEN
-      run: echo $PYPI_TOKEN
+      run: echo ${{ secrets.PYPI_TOKEN }} 
     - name: Publish to PyPI
       run:  poetry publish --username __token__ --password ${{ secrets.dev.PYPI_TOKEN }}
  

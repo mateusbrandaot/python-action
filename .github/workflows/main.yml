@@ -17,5 +17,7 @@ jobs:
       run: curl -sSL https://install.python-poetry.org | python3 - --git https://github.com/python-poetry/poetry.git@master
     - name: Build 
       run: poetry build 
+    - name: autenticacao 
+      run: poetry config pypi-token.pypi pypi-AgEIcHlwaS5vcmcCJDMzZjM3ZTFhLWQ1MTUtNGIxNy04MGJkLTVhMjExNjAwMjBjMgACKlszLCJmM2Q4NTk0MS1kMTQwLTQ1MDAtOTIxZi05NWQ5YzI4NzA3NmQiXQAABiDmD7s-O56HBwe56cw_ZqcvG3jpUnf8tCK0N4gwVwl5Hw  
     - name: publish
       run: poetry publish --username mateusbrandaote --password e9855e9a-2373-41e8-9bef-b46cb4a1aa9b

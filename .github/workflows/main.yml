@@ -12,5 +12,5 @@ jobs:
         with:
           PACKAGE_DIRECTORY: "./src/"
           PYTHON_VERSION: "3.8"
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.TOKEN }}
           PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}

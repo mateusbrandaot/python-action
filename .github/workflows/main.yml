@@ -8,7 +8,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-<<<<<<< HEAD
     - uses: actions/checkout@v2
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -18,12 +17,3 @@ jobs:
       run: poetry install
     - name: Build and publish
       run: poetry publish --username __token__ --password ${{ secrets.PYPI_TOKEN }}
-=======
-      - name: Publish PyPi package
-        uses: code-specialist/pypi-poetry-publish@v1
-        with:
-          PACKAGE_DIRECTORY: "./src/"
-          PYTHON_VERSION: "3.8"
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}
->>>>>>> 55ec4a5692253e632d81b1edbeec973a23c8525a

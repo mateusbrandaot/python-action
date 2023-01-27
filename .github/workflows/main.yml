@@ -23,5 +23,5 @@ jobs:
     - name: Check PYPI_TOKEN
       run: echo ${{ secrets.PYPI_TOKEN }} 
     - name: Publish to PyPI
-      run:  poetry publish --username __token__ --password ${{ secrets.dev.PYPI_TOKEN }}
+      run:  poetry publish --username __token__ --password ${{ secrets.PYPI_TOKEN }}
  
